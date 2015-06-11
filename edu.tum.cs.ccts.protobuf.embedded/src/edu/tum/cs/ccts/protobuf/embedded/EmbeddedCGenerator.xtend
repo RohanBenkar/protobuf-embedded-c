@@ -221,7 +221,7 @@ class EmbeddedCGenerator {
          		messageSize = messageSize + repeatedLength * (2 + 1 + bytesLength)
        		} else {
 	         	//embedded messages
-	         	messageSize = messageSize + repeatedLength * type.text.findMessage(m.parent).getMaximumSerializedSize
+	         	messageSize = messageSize + repeatedLength * (type.text.findMessage(m.parent).getMaximumSerializedSize as Integer)
        		}
 		}
 		

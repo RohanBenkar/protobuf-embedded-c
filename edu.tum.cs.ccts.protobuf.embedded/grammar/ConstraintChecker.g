@@ -134,8 +134,8 @@ annotationDecl
 			 * That's OK for size (maximum 2 byte varint), which has 14bit payload.
 			 */
 			int v = Integer.parseInt($INTEGER.text);
-			if (v < 2 || v > 127)
-				constraintError($ID.line, name + " must be within [2..127], but was " + v);
+			if (!name.equals("max_bytes_length") && (v < 2 || v > 127))
+				constraintError($ID.line, name + " must be within [2..127], but was " + v);	
 			annotations.add(name);
 		}
 	;

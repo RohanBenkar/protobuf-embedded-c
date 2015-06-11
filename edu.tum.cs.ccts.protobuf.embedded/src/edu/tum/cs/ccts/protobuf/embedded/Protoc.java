@@ -37,7 +37,7 @@ import org.antlr.runtime.tree.CommonTreeNodeStream;
  */
 public class Protoc {
 
-	public static final String VERSION = "1.0M4 (2013-03-31)";
+	public static final String VERSION = "1.0M5 (2015-06-10)";
 
 	private static boolean debug = false;
 
